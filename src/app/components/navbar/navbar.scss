@@ -14,7 +14,7 @@ nav.scrolled {
   background: rgba(4, 8, 12, 0.88);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(0, 229, 160, 0.1);
+  border-bottom: 1px solid rgba(56, 133, 188, 0.1);
   padding: 0.7rem 5vw;
 }
 
@@ -24,8 +24,8 @@ nav.scrolled {
 }
 
 .logo-img {
-  height: 46px;
-  width: 46px;
+  height: 50px;
+  width: 50px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #00e5a0;
@@ -51,7 +51,7 @@ nav.scrolled {
 
   li a {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.68rem;
+    font-size: 0.89rem;
     color: rgba(200, 220, 215, 0.55);
     text-decoration: none;
     letter-spacing: 0.14em;
