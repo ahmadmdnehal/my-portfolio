@@ -1,0 +1,39 @@
+<p>contact works!</p>
+<section id="contact">
+  <span class="section-label">// 04. Contact</span>
+  <h2>Baat <span>Karte Hain</span></h2>
+  <p class="intro">Koi project hai? Collaboration chahiye? Message karo!</p>
+
+  <div class="form-wrap">
+    @if (sent) {
+      <div class="success">
+        Message bhej diya gaya! Jald jawab dunga.
+      </div>
+    }
+
+    <div class="field">
+      <label>Naam</label>
+      <input type="text" [(ngModel)]="name" placeholder="Aapka naam" />
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" [(ngModel)]="email" placeholder="email@example.com" />
+    </div>
+    <div class="field">
+      <label>Message</label>
+      <textarea [(ngModel)]="message" rows="5" placeholder="Kya baat karni hai..."></textarea>
+    </div>
+
+    <button (click)="send()" [disabled]="!name || !email || !message">
+      Bhejo →
+    </button>
+  </div>
+
+  <div class="links">
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <span>·</span>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <span>·</span>
+    <a href="mailto:your@email.com">Email</a>
+  </div>
+</section>

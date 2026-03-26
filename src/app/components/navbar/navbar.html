@@ -1,0 +1,29 @@
+<nav [class.scrolled]="isScrolled">
+  <div class="logo">
+    <img src="logo.png" alt="Logo" class="logo-img" />
+  </div>
+
+  <ul class="nav-links" [class.open]="menuOpen">
+    <li [class.active]="activeSection === 'hero'">
+      <a href="#hero" (click)="close()">Home</a>
+    </li>
+    <li [class.active]="activeSection === 'about'">
+      <a href="#about" (click)="close()">About</a>
+    </li>
+    <li [class.active]="activeSection === 'skills'">
+      <a href="#skills" (click)="close()">Skills</a>
+    </li>
+    <li [class.active]="activeSection === 'projects'">
+      <a href="#projects" (click)="close()">Projects</a>
+    </li>
+    <li [class.active]="activeSection === 'contact'">
+      <a href="#contact" (click)="close()">Contact</a>
+    </li>
+  </ul>
+
+  <button class="hamburger" (click)="toggle()" [class.open]="menuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>

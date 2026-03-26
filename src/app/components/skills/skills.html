@@ -1,0 +1,18 @@
+<section id="skills">
+  <span class="section-label">// 02. Skills</span>
+  <h2>Tech <span>Stack</span></h2>
+  <div class="grid">
+    @for (s of skills; track s.name) {
+      <div class="card">
+        <div class="row">
+          <span class="name">{{ s.name }}</span>
+          <span class="pct">{{ s.level }}%</span>
+        </div>
+        <div class="bar">
+          <div class="fill" [style.width.%]="s.level"></div>
+        </div>
+        <span class="cat">{{ s.cat }}</span>
+      </div>
+    }
+  </div>
+</section>

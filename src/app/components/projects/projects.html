@@ -1,0 +1,23 @@
+<section id="projects">
+  <span class="section-label">// 03. Projects</span>
+  <h2>Mera <span>Kaam</span></h2>
+  <div class="grid">
+    @for (p of projects; track p.title) {
+      <div class="card">
+        <div class="top">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--accent)">
+            <path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+          </svg>
+          <a [href]="p.link" class="link-icon">↗</a>
+        </div>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.desc }}</p>
+        <div class="tech">
+          @for (t of p.tech; track t) {
+            <span>{{ t }}</span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>
